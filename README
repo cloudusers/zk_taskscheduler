@@ -1,0 +1,39 @@
+see doc/zk_taskscheduler.png
+
+
+
+
+if you wanna re-compile, below libs suggested setup firstly
+	boost <better 1.56.0>
+	zookeeper<better 3.4.5>
+	log4cplus<better 1.1.2>
+
+	NOTE: 
+			for convenience, these static libs
+			(libboost_date_time.a  
+			 libboost_system.a  
+			 libboost_thread.a  
+			 liblog4cplus.a  
+			 libzookeeper_mt.a  
+			 libzoolock.a)
+			have been put into thirdparty_*/libs and correspondly headers 
+			(boost
+			 log4cplus
+			 zookeeper)
+			have been put into thirdparty_*/include
+
+		 	so if you wanna recompile, had better change Makefile
+			(
+			 src/sche/Makefile
+			 src/base/utility/Makefile
+			 src/base/zk_lib/Makefile
+			)
+			and set libs's path to your system
+
+
+
+bugs report to
+	E_mail: clouduser@163.com
+	QQ_Group:  528977281
+
+
